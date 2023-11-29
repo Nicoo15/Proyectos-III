@@ -1,24 +1,48 @@
-body {
-    background-color: #FBF8F2;
-    font-family: sans-serif;
+/* Variables para colores */
+:root {
+    --primary-bg-color: #091D1E;
+    --secondary-bg-color: #FBF8F2;
+    --text-color: #091D1E;
 }
+
+/* Estilo del cuerpo y la fuente */
+body {
+    background-color: var(--secondary-bg-color);
+    font-family: sans-serif;
+    color: var(--text-color);
+}
+
+/* Ajuste de altura mínima para contenido principal */
 .main-content {
     min-height: 100vh;
-  }
-  
+}
+
+/* Estilos para la barra de navegación, botón principal y pie de página */
 .navbar, .btn-primary, footer {
-    background-color: #091D1E;
+    background-color: var(--primary-bg-color);
 }
 
+/* Estilos para los enlaces de navegación y diversos encabezados y textos */
 .nav-link, .display-4, .lead, h2, .card-title, .card-text {
-    color: #091D1E;
+    color: var(--text-color);
 }
 
+/* Ajustes para el botón principal */
 .btn-primary {
-    border-color: #091D1E;
+    border-color: var(--primary-bg-color);
 }
 
+/* Estilo específico para el logo en la barra de navegación */
 .logo-navbar {
     width: auto;
     height: 3rem;
+}
+
+/* Ejemplo de clases modificadores para tamaños de texto */
+.text-small {
+    font-size: 0.8em;
+}
+
+.text-large {
+    font-size: 1.2em;
 }
