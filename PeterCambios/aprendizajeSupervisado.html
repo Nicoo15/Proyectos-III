@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Conocimientos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #eaeaea; /* Color de fondo suave */
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #contenedor {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        #desarrollo,
+        #resultado {
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        button,
+        a.button {
+            background-color: #007BFF; /* Cambio de color a azul */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        button:hover,
+        a.button:hover {
+            background-color: #0056b3; /* Cambio de color a un tono más oscuro al pasar el ratón */
+        }
+
+        .pregunta-fallada {
+            background-color: #ffcccc; /* Cambio de color a un tono más claro para resaltar preguntas falladas */
+        }
+
+        #resultado {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+   
+<div id="contenedor">
+    <a class="button" href="index.html">Inicio</a>
+
+    <h1>Aprendizaje Supervisado</h1>
+    <p>
+        La IA utiliza el aprendizaje supervisado como un enfoque fundamental para desarrollar modelos predictivos. En este método de entrenamiento, el algoritmo se nutre de un conjunto de datos etiquetado, donde cada entrada está asociada con una salida conocida o deseada. Esencialmente, se le proporciona a la máquina ejemplos de entrada junto con las respuestas correctas correspondientes, permitiéndole aprender y hacer predicciones precisas.
+    </p>
+    <p>
+        Durante el proceso de entrenamiento en el aprendizaje supervisado, la IA ajusta sus parámetros internos para minimizar la discrepancia entre sus predicciones y las salidas esperadas. Este ajuste se realiza mediante algoritmos de optimización que buscan mejorar la capacidad del modelo para generalizar patrones a partir de los datos de entrenamiento y aplicar esos patrones a nuevas instancias no vistas.
+    </p>
+    <p>
+        El aprendizaje supervisado ha demostrado ser particularmente efectivo cuando se cuenta con conjuntos de datos extensos y debidamente etiquetados. En el contexto del reconocimiento de voz, por ejemplo, el modelo podría ser alimentado con grabaciones de voz junto con las transcripciones correspondientes. De manera similar, en la clasificación de imágenes, se le proporcionarían imágenes con etiquetas que indican las categorías a las que pertenecen.
+    </p>
+    <p>
+        La versatilidad del aprendizaje supervisado se refleja en su aplicación en una variedad de campos. Desde la medicina, donde se emplea para el diagnóstico médico basado en historiales clínicos y resultados de pruebas, hasta la traducción automática de idiomas, donde se entrena con pares de texto traducidos. Este enfoque se ha convertido en un pilar fundamental en la construcción de sistemas de inteligencia artificial eficientes y precisos.
+    </p>
+    <h3>
+        Más información sobre el aprendizaje supervisado: <a href="https://es.wikipedia.org/wiki/Aprendizaje_supervisado">https://es.wikipedia.org/wiki/Aprendizaje_supervisado</a>
+    </h3>
+</div>
+<div>
+    <h2>Cuestionario:</h2>
+    <form id="testForm">
+        <p id="pregunta1">Pregunta 1: ¿Cuál es un ejemplo de aplicación del aprendizaje supervisado?</p>
+        <label><input type="radio" name="q1" value="paris"> Clustering de clientes </label>
+        <label><input type="radio" name="q1" value="berlin"> Juegos de estrategia como Go</label>
+        <label><input type="radio" name="q1" value="Recon"> Reconocimiento de voz </label>
+        <label><input type="radio" name="q1" value="londres"> Exploración de datos sin etiquetar</label>
+
+        <p id="pregunta2">Pregunta 2: ¿Qué se requiere para el entrenamiento en aprendizaje supervisado?</p>
+        <label><input type="radio" name="q2" value="rojo"> Un conjunto de datos sin etiquetar </label>
+        <label><input type="radio" name="q2" value="azul"> Solo recompensas y penalizaciones</label>
+        <label><input type="radio" name="q2" value="Conjuntos"> Conjuntos de datos etiquetados </label>
+        <label><input type="radio" name="q2" value="verde"> Redes neuronales profundas exclusivamente</label>
+
+        <p id="pregunta3">Pregunta 3: ¿Qué tipo de problema es comúnmente resuelto con aprendizaje supervisado?</p>
+        <label><input type="radio" name="q3" value="tokio"> Clustering </label>
+        <label><input type="radio" name="q3" value="seul"> Reducción de dimensionalidad </label>
+        <label><input type="radio" name="q3" value="Clasi"> Clasificación </label>
+        <label><input type="radio" name="q3" value="pekin"> Exploración de datos no estructurados</label>
+
+        <p id="pregunta4">Pregunta 4: ¿Qué se utiliza típicamente en el aprendizaje supervisado para evaluar el rendimiento del modelo? </p>
+        <label><input type="radio" name="q4" value="tokio"> Conjuntos de datos no etiquetados </label>
+        <label><input type="radio" name="q4" value="seul"> Redes neuronales profundas  </label>
+        <label><input type="radio" name="q4" value="pekin"> Datos de recompensas y penalizaciones  </label>
+        <label><input type="radio" name="q4" value="Datos"> Conjuntos de datos de prueba </label>
+
+        <p id="pregunta5">Pregunta 5: ¿Cuál es un ejemplo de un algoritmo utilizado en el aprendizaje supervisado?</p>
+        <label><input type="radio" name="q5" value="tokio"> Algoritmos genéticos  </label>
+        <label><input type="radio" name="q5" value="seul"> Algoritmo K-means  </label>
+        <label><input type="radio" name="q5" value="Redes"> Redes neuronales convolucionales </label>
+        <label><input type="radio" name="q5" value="pekin"> Análisis de componentes principales (PCA)
+        </label>
+
+        <br>
+        <button type="button" onclick="calificarTest()">Terminar</button>
+        <div id="resultado"></div>
+    </form>
+
+    
+</div>
+
+<script>
+    function calificarTest() {
+        var respuestasCorrectas = ["Recon", "Conjuntos", "Clasi", "Datos","Redes"];
+        var respuestasUsuario = [];
+        var fallos = 0;
+
+        // Obtener respuestas del usuario
+        for (var i = 1; i <= 5; i++) {
+            var respuesta = document.querySelector('input[name="q' + i + '"]:checked');
+            if (respuesta) {
+                respuestasUsuario.push(respuesta.value);
+            } else {
+                respuestasUsuario.push(null);
+            }
+        }
+
+        // Calcular resultado
+        var aciertos = 0;
+        var preguntasFalladas = [];
+
+        for (var i = 0; i < respuestasCorrectas.length; i++) {
+            if (respuestasCorrectas[i] === respuestasUsuario[i]) {
+                aciertos++;
+            } else {
+                fallos++;
+                preguntasFalladas.push("pregunta" + (i + 1));
+            }
+        }
+
+        // Resaltar preguntas incorrectas visualmente
+        preguntasFalladas.forEach(function(pregunta) {
+            document.getElementById(pregunta).classList.add('pregunta-fallada');
+        });
+
+        // Mostrar resultado
+        var resultadoDiv = document.getElementById('resultado');
+        resultadoDiv.innerHTML = "<h2>Resultado:</h2>";
+        resultadoDiv.innerHTML += "<p>Aciertos: " + aciertos + "</p>";
+        resultadoDiv.innerHTML += "<p>Fallos: " + fallos + "</p>";
+
+        if (fallos > 0) {
+            resultadoDiv.innerHTML += "<p>Preguntas falladas: " + preguntasFalladas.join(", ") + "</p>";
+        }
+    }
+</script>
+
+</body>
+</html>
+
+
