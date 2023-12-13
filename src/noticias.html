@@ -1,78 +1,144 @@
-<!-- noticias.html -->
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias - Foro de Inteligencia Artificial</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>CD/ IA.</title>
     <style>
-        /* Estilos específicos para la página de noticias */
-        #noticias-container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        #noticias-list {
-            list-style-type: none;
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
             padding: 0;
         }
 
-        .noticia {
-            border: 1px solid #ddd;
-            margin-bottom: 15px;
-            padding: 10px;
-        }
-
-        .noticia a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-
-        #nueva-noticia-form {
-            margin-top: 20px;
-        }
-
-        #nueva-noticia-form textarea {
-            width: 100%;
-            margin-bottom: 10px;
-        }
-
-        #nueva-noticia-form button {
-            background-color: #007BFF;
+        header {
+            background-color: #333;
             color: #fff;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
+            padding: 10px 20px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-list li {
+            margin-right: 20px;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .nav-list li.active a {
+            color: #007BFF;
+        }
+
+        .noticias-container {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .noticia {
+            margin-bottom: 40px;
+        }
+
+        .noticia h2 {
+            color: #333;
+        }
+
+        .noticia img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .fecha {
+            color: #888;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
+
 <body>
-    <div id="noticias-container">
-        <h1>Noticias sobre Inteligencia Artificial</h1>
-        <ul id="noticias-list"></ul>
-        <div id="nueva-noticia-form">
-            <textarea id="nueva-noticia-text" placeholder="Escribe tu noticia"></textarea>
-            <button onclick="publicarNoticia()">Publicar Noticia</button>
-        </div>
+
+    <header>
+        <nav class="navbar"><a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+        </a>
+            <div class="logo">Noticias CD/ IA.</div>
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="active"><a href="noticias.html">Noticias</a></li>
+                <li><a href="#">Secciones</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="noticias-container">
+        <article class="noticia">
+            <h2>Desarrollada Nueva IA para la Detección Temprana de Enfermedades</h2>
+            <p class="fecha">Publicado el 10 de marzo de 2023</p>
+            <img src="img/enfermedades.jpg" alt="Inteligencia Artificial en Medicina">
+            <p>
+                Científicos han anunciado la creación de una nueva inteligencia artificial capaz de analizar datos médicos y
+                diagnosticar enfermedades en etapas tempranas. Esta tecnología promete revolucionar la atención médica al
+                permitir tratamientos más efectivos y mejorar las tasas de supervivencia.
+            </p>
+            <p>
+                La IA utiliza algoritmos avanzados de aprendizaje profundo para analizar imágenes médicas, datos de laboratorio y
+                síntomas del paciente. Este avance representa un paso significativo hacia la medicina personalizada y el
+                tratamiento preventivo.
+            </p>
+        </article>
+    
+        <article class="noticia">
+            <h2>Robot con Inteligencia Artificial Ayuda en la Exploración Submarina</h2>
+            <p class="fecha">Publicado el 12 de marzo de 2023</p>
+            <img src="img/submarino.jpg" alt="Robot con IA en Exploración Submarina">
+            <p>
+                Un equipo de investigadores ha desarrollado un robot submarino equipado con inteligencia artificial para
+                explorar las profundidades del océano. Este robot autónomo puede realizar mapeo tridimensional del lecho marino,
+                identificar especies marinas y recopilar datos ambientales cruciales para la investigación científica.
+            </p>
+            <p>
+                La IA integrada en el robot le permite adaptarse a entornos cambiantes y tomar decisiones informadas sobre las
+                rutas de exploración. Este avance tiene el potencial de aumentar nuestra comprensión de los ecosistemas marinos y
+                descubrir nuevas formas de vida.
+            </p>
+        </article>
     </div>
-
-    <script>
-        // Función para publicar una nueva noticia
-        function publicarNoticia() {
-            var nuevaNoticiaText = document.getElementById('nueva-noticia-text').value;
-            if (nuevaNoticiaText.trim() !== '') {
-                var noticiasList = document.getElementById('noticias-list');
-                var nuevaNoticia = document.createElement('li');
-                nuevaNoticia.className = 'noticia';
-                nuevaNoticia.innerHTML = '<p>' + nuevaNoticiaText + '</p>';
-                noticiasList.appendChild(nuevaNoticia);
-
-                // Limpiar el área de texto después de publicar
-                document.getElementById('nueva-noticia-text').value = '';
-            }
-        }
-    </script>
+    
+    <div class="container text-center"></div>
+    <footer id="miFooter" class="bg-primary text-white py-3 mt-auto">
+        
+            <p class="mb-0">© 2023 Foro de Inteligencia Artificial. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
+
 </html>
