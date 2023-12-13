@@ -1,0 +1,78 @@
+<!-- noticias.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias - Foro de Inteligencia Artificial</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos específicos para la página de noticias */
+        #noticias-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        #noticias-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .noticia {
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+
+        .noticia a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        #nueva-noticia-form {
+            margin-top: 20px;
+        }
+
+        #nueva-noticia-form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        #nueva-noticia-form button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="noticias-container">
+        <h1>Noticias sobre Inteligencia Artificial</h1>
+        <ul id="noticias-list"></ul>
+        <div id="nueva-noticia-form">
+            <textarea id="nueva-noticia-text" placeholder="Escribe tu noticia"></textarea>
+            <button onclick="publicarNoticia()">Publicar Noticia</button>
+        </div>
+    </div>
+
+    <script>
+        // Función para publicar una nueva noticia
+        function publicarNoticia() {
+            var nuevaNoticiaText = document.getElementById('nueva-noticia-text').value;
+            if (nuevaNoticiaText.trim() !== '') {
+                var noticiasList = document.getElementById('noticias-list');
+                var nuevaNoticia = document.createElement('li');
+                nuevaNoticia.className = 'noticia';
+                nuevaNoticia.innerHTML = '<p>' + nuevaNoticiaText + '</p>';
+                noticiasList.appendChild(nuevaNoticia);
+
+                // Limpiar el área de texto después de publicar
+                document.getElementById('nueva-noticia-text').value = '';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,11 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba de Conocimientos</title>
+    <title>Aprendizaje No Supervisado</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #eaeaea; /* Color de fondo suave */
+            background-image: url('img/ia.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
             margin: 0;
             padding: 0;
             align-items: center;
@@ -22,17 +29,37 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             background-color: #fff;
             border-radius: 8px;
+            margin-top: 20px;
         }
 
         h1,
         h2 {
-            color: #333;
+            color: var(--primary-bg-color);
             text-align: center;
         }
 
-        #desarrollo,
-        #resultado {
-            margin-bottom: 20px;
+        p {
+            margin: 10px 0;
+        }
+
+        h3 {
+            color: var(--primary-bg-color);
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        #testForm {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         form {
@@ -40,10 +67,8 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        p {
-            margin: 10px 0;
+            display: flex;
+            flex-direction: column;
         }
 
         label {
@@ -51,9 +76,27 @@
             margin-bottom: 10px;
         }
 
-        button,
-        a.button {
-            background-color: #007BFF; /* Cambio de color a azul */
+        /* Resalta las preguntas con negrita */
+        p[id^="pregunta"] {
+            font-weight: bold;
+        }
+
+        .pregunta-acertada {
+            text-decoration: underline;
+            color: green;
+        }
+
+        .pregunta-fallada {
+            background-color: #ffcccc;
+        }
+
+        #resultado {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #007BFF;
             color: #fff;
             padding: 10px 20px;
             border: none;
@@ -61,20 +104,11 @@
             cursor: pointer;
             text-decoration: none;
             display: inline-block;
-            margin-bottom: 10px;
+            margin-top: 10px;
         }
 
-        button:hover,
-        a.button:hover {
-            background-color: #0056b3; /* Cambio de color a un tono más oscuro al pasar el ratón */
-        }
-
-        .pregunta-fallada {
-            background-color: #ffcccc; /* Cambio de color a un tono más claro para resaltar preguntas falladas */
-        }
-
-        #resultado {
-            color: #333;
+        button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -96,7 +130,8 @@
       Aunque la inteligencia artificial débil encuentra amplia aplicación en la vida cotidiana, desde asistentes virtuales hasta sistemas de recomendación en plataformas de streaming, su utilidad es intrínsecamente vinculada a tareas especializadas. Su falta de generalización y comprensión más allá de la programación inicial la diferencia de la inteligencia artificial fuerte, que busca alcanzar un nivel de comprensión y habilidad equiparable al humano en diversas áreas.
     </p>
     <h3>
-      Más información sobre Inteligencia Artificial Débil: <a href="https://en.wikipedia.org/wiki/Weak_AI">https://en.wikipedia.org/wiki/Weak_AI</a>
+        <span> Más información sobre Inteligencia Artificial Débil:  </span><a
+        href="https://en.wikipedia.org/wiki/Weak_AI" target="_blank">Enlace</a>
     </h3>
 
 </div>
