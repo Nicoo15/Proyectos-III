@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendizaje Supervisado</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('img/ia.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #contenedor {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        h1,
+        h2 {
+            color: var(--primary-bg-color);
+            text-align: center;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        h3 {
+            color: var(--primary-bg-color);
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+
+        
+
+        
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="contenedor">
+        <a class="button" href="index.html">Inicio</a>
+        <h1>Aprendizaje Supervisado</h1>
+    <p>
+        La IA utiliza el aprendizaje supervisado como un enfoque fundamental para desarrollar modelos predictivos. En este método de entrenamiento, el algoritmo se nutre de un conjunto de datos etiquetado, donde cada entrada está asociada con una salida conocida o deseada. Esencialmente, se le proporciona a la máquina ejemplos de entrada junto con las respuestas correctas correspondientes, permitiéndole aprender y hacer predicciones precisas.
+    </p>
+    <p>
+        Durante el proceso de entrenamiento en el aprendizaje supervisado, la IA ajusta sus parámetros internos para minimizar la discrepancia entre sus predicciones y las salidas esperadas. Este ajuste se realiza mediante algoritmos de optimización que buscan mejorar la capacidad del modelo para generalizar patrones a partir de los datos de entrenamiento y aplicar esos patrones a nuevas instancias no vistas.
+    </p>
+    <p>
+        El aprendizaje supervisado ha demostrado ser particularmente efectivo cuando se cuenta con conjuntos de datos extensos y debidamente etiquetados. En el contexto del reconocimiento de voz, por ejemplo, el modelo podría ser alimentado con grabaciones de voz junto con las transcripciones correspondientes. De manera similar, en la clasificación de imágenes, se le proporcionarían imágenes con etiquetas que indican las categorías a las que pertenecen.
+    </p>
+    <p>
+        La versatilidad del aprendizaje supervisado se refleja en su aplicación en una variedad de campos. Desde la medicina, donde se emplea para el diagnóstico médico basado en historiales clínicos y resultados de pruebas, hasta la traducción automática de idiomas, donde se entrena con pares de texto traducidos. Este enfoque se ha convertido en un pilar fundamental en la construcción de sistemas de inteligencia artificial eficientes y precisos.
+    </p>
+    
+        
+        <h3>
+            Cómo funciona el aprendizaje supervisado
+        </h3>
+        <p>
+            El aprendizaje supervisado utiliza un conjunto de datos de entrenamiento para enseñar a los modelos a generar la salida deseada. Este conjunto de datos de entrenamiento de datos incluye entradas y salidas correctas que, a su vez, permiten que el modelo aprenda con el tiempo. El algoritmo mide su exactitud a través de la función de pérdida, ajustándose hasta que el error se ha minimizado lo suficiente.
+
+            El aprendizaje supervisado se puede separar en dos tipos de problemas en la minería de datos: clasificación y regresión. 
+        </p>
+        <p>-La clasificación utiliza un algoritmo para asignar con precisión datos de prueba a categorías específicas. Reconoce entidades específicas dentro del conjunto de datos e intenta sacar algunas conclusiones sobre cómo se deben etiquetar o definir esas entidades. Los algoritmos de clasificación más comunes son los clasificadores lineales, las máquinas de vectores de soporte (SVM, por sus siglas en inglés), los árboles de decisiones, el k vecinos más cercanos y el bosque aleatorio, que se describen con más detalle a continuación.</p>
+        <p>-La regresión se utiliza para comprender la relación entre variables dependientes e independientes. Se usa comúnmente para realizar proyecciones, como ingresos por ventas para una empresa determinada. Regresión lineal, regresión logística y regresión polinómica son algoritmos de regresión populares.</p>
+        <h3>Ejemplos de Aprendizaje supervisado</h3>
+        <p>
+            Los modelos de aprendizaje supervisado se pueden utilizar para crear y desarrollar un buen número de aplicaciones empresariales, incluidas:
+
+            <p>-Reconocimiento de imágenes y objetos: los algoritmos de aprendizaje supervisado se pueden utilizar para encontrar, aislar y categorizar objetos de vídeos o imágenes, lo cual resulta muy útil cuando se aplican a varias técnicas de visión computacional y análisis de imágenes.</p>
+            <p>-Análisis predictivo: un caso de uso generalizado de los modelos de aprendizaje supervisado es la creación de sistemas de análisis predictivo para proporcionar información más exhaustiva sobre varios puntos de datos de negocio. Esto permite a las empresas anticipar determinados resultados con base en una determinada variable de salida, ayudando a los líderes de la empresa a justificar decisiones o realizar cambios en beneficio de la organización.</p>
+            
+            <p>-Análisis de opinión del cliente: mediante el uso de algoritmos de machine learning supervisado, las organizaciones pueden extraer y clasificar información importante de grandes volúmenes de datos, incluidos contexto, emoción e intención, con muy poca intervención humana. Esto puede ser increíblemente útil para comprender mejor las interacciones del cliente y puede usarse para mejorar las iniciativas de compromiso con la marca.</p>
+            <p>-Detección de correo no deseado: la detección de correo no deseado es otro ejemplo de modelo de aprendizaje supervisado. Mediante algoritmos de clasificación supervisados, las organizaciones pueden entrenar bases de datos para reconocer patrones o anomalías en nuevos datos para organizar correspondencias relacionadas con correo no deseado de manera efectiva.</p>
+        </p>
+        <h3>
+            <span> Más información sobre el aprendizaje supervisado: </span><a
+                            href="https://es.wikipedia.org/wiki/Aprendizaje_supervisado" target="_blank">Enlace</a>
+        </h3>
+    </div>
+
+    
+
+</body>
+
+</html>
+
+

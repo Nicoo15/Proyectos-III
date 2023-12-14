@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendizaje No Supervisado</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('img/ia.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #contenedor {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        h1,
+        h2 {
+            color: var(--primary-bg-color);
+            text-align: center;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        h3 {
+            color: var(--primary-bg-color);
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+
+        
+
+        
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="contenedor">
+        <a class="button" href="index.html">Inicio</a>
+        <h1>Aprendizaje Reforzado</h1>
+        <p>
+            El aprendizaje reforzado en inteligencia artificial destaca por su enfoque único, permitiendo que la IA mejore su
+            rendimiento mediante la interacción activa con su entorno y la retroalimentación de recompensas o penalizaciones. En
+            este proceso dinámico, la IA no solo procesa datos, sino que también ajusta su comportamiento con el tiempo para
+            maximizar las recompensas acumuladas.
+        </p>
+        <p>
+            Este enfoque es particularmente aplicado en juegos y robótica, donde un agente de aprendizaje reforzado se enfrenta
+            a entornos desafiantes. Por ejemplo, en juegos estratégicos como Go o ajedrez, el agente recibe recompensas por
+            movimientos exitosos y penalizaciones por errores, mejorando así su estrategia con cada interacción.
+        </p>
+        <p>
+            Aunque el aprendizaje reforzado es menos común en comparación con enfoques como el supervisado y no supervisado, ha
+            demostrado ser prominente en la investigación y aplicación de inteligencia artificial en diversos campos. La
+            capacidad de la IA para aprender de la experiencia directa y adaptarse a situaciones dinámicas lo hace especialmente
+            valioso en juegos, robótica y control de procesos.
+        </p>
+        <p>
+            En la investigación de juegos, el aprendizaje reforzado ha impulsado avances significativos, permitiendo a los
+            agentes superar incluso a jugadores humanos expertos en toma de decisiones estratégicas. En el ámbito de la
+            robótica, este enfoque posibilita que los robots aprendan tareas complejas mediante la exploración y la interacción
+            con su entorno, siendo particularmente útil en situaciones dinámicas y cambiantes.
+        </p>
+        <p>
+            Además, el aprendizaje reforzado encuentra aplicaciones prácticas en el control de procesos industriales, donde la
+            IA optimiza continuamente el rendimiento y la eficiencia de sistemas complejos.
+        </p>
+        <h3>
+            Refuerzo positivo y negativo
+        </h3>
+        <p>El refuerzo positivo aumenta la frecuencia de un comportamiento, mientras que el refuerzo negativo disminuye la frecuencia.
+            En general, el refuerzo positivo es el tipo de refuerzo más común utilizado en el aprendizaje por refuerzo, ya que ayuda a los modelos a maximizar el rendimiento en una tarea determinada.
+            No solo eso, sino que el refuerzo positivo lleva al modelo a realizar cambios más sostenibles, cambios que pueden convertirse en patrones consistentes y persistir durante largos períodos de tiempo.
+
+            Por el contrario, si bien el refuerzo negativo también aumenta la probabilidad de que ocurra un comportamiento, se utiliza para mantener un estándar de rendimiento mínimo en lugar de alcanzar el rendimiento máximo de un modelo.
+            El refuerzo negativo en el aprendizaje por refuerzo puede ayudar a garantizar que un modelo se mantenga alejado de acciones indeseables, pero en realidad no puede hacer que un modelo explore las acciones deseadas.
+        </p>
+        <h3>
+            Capacitación de un agente de refuerzo
+        </h3>
+        <p>
+        
+                Cuando se entrena un agente de aprendizaje por refuerzo, hay cuatro ingredientes diferentes or afirma utilizados en el entrenamiento: estados iniciales (Estado 0), nuevo estado (Estado 1), acciones y recompensas.
+
+                Imagina que estamos entrenando a un agente de refuerzo para jugar un videojuego de plataformas en el que el objetivo de la IA es llegar al final del nivel moviéndose por la pantalla. 
+                El estado inicial del juego se extrae del entorno, lo que significa que el primer cuadro del juego se analiza y se entrega al modelo. En base a esta información, el modelo debe decidir sobre una acción.
+                
+                Durante las fases iniciales del entrenamiento, estas acciones son aleatorias, pero a medida que se refuerza el modelo, ciertas acciones se volverán más comunes. 
+                Después de realizar la acción, se actualiza el entorno del juego y se crea un nuevo estado o marco. Si la acción realizada por el agente produjo un resultado deseable, 
+                digamos en este caso que el agente todavía está vivo y no ha sido golpeado por un enemigo, se le otorga alguna recompensa al agente y es más probable que haga lo mismo en el futuro.
+                
+                Este sistema básico está constantemente en bucle, sucediendo una y otra vez, y cada vez que el agente intenta aprender un poco más y maximizar su recompensa.
+            
+        </p>
+        <h3>Resumen del Aprendizaje Reforzado</h3>
+        <p>
+            El aprendizaje por refuerzo es un método poderoso para construir agentes de IA que puede conducir a resultados impresionantes y, a veces, sorprendentes. 
+            Capacitar a un agente a través del aprendizaje por refuerzo puede ser complejo y difícil, ya que requiere muchas iteraciones de capacitación y un delicado equilibrio de la dicotomía explorar/explotar. 
+            Sin embargo, si tiene éxito, un agente creado con aprendizaje por refuerzo puede realizar tareas complejas en una amplia variedad de entornos diferentes.
+        </p>
+        <h3>
+            <span> Más información sobre el aprendizaje reforzado: </span><a
+            href="https://en.wikipedia.org/wiki/Reinforcement_learning" target="_blank">Enlace</a>
+        </h3>
+    </div>
+
+    
+
+</body>
+
+</html>
