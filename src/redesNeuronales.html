@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprendizaje No Supervisado</title>
+    <title>Redes Neuronales</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -55,12 +55,7 @@
             color: #0056b3;
         }
 
-        #testForm {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+        
 
         form {
             background-color: #fff;
@@ -76,24 +71,10 @@
             margin-bottom: 10px;
         }
 
-        /* Resalta las preguntas con negrita */
-        p[id^="pregunta"] {
-            font-weight: bold;
-        }
 
-        .pregunta-acertada {
-            text-decoration: underline;
-            color: green;
-        }
+        
 
-        .pregunta-fallada {
-            background-color: #ffcccc;
-        }
-
-        #resultado {
-            color: #333;
-            margin-top: 20px;
-        }
+        
 
         button {
             background-color: #007BFF;
@@ -112,106 +93,50 @@
         }
     </style>
 </head>
+
 <body>
-   
-<div id="contenedor">
-    <a class="button" href="index.html">Inicio</a>
-    <h1>Redes Neuronales Artificiales</h1>
-    <p>
-      Las redes neuronales, inspiradas en la estructura del cerebro humano, son un componente esencial en el campo de la inteligencia artificial. Estas redes procesan información a través de capas de nodos interconectados, imitando el funcionamiento de las neuronas biológicas. Su papel es crucial en el ámbito del aprendizaje profundo (deep learning), una rama de la inteligencia artificial que busca imitar la capacidad humana de aprender a través de la experiencia.
-    </p>
-    <p>
-      En el aprendizaje profundo, las redes neuronales profundas desempeñan un papel clave. Estas se aplican en diversas tareas, como el reconocimiento de imágenes y el procesamiento del lenguaje natural. La capacidad de estas redes para aprender representaciones complejas de datos las hace excepcionalmente eficaces en la realización de tareas sofisticadas y complejas.
-    </p>
-    <p>
-      Un ejemplo práctico es el uso de las redes neuronales convolucionales (CNN) en el reconocimiento de imágenes. Estas CNN son fundamentales en tareas como el reconocimiento facial, donde la inteligencia artificial puede aprender a identificar características distintivas de caras a través de capas de nodos interconectados. Esta capacidad permite la clasificación precisa de imágenes, como la identificación de personas en fotografías.
-    </p>
-    <h3>
-      Más información sobre Inteligencia Artificial: <a href="https://en.wikipedia.org/wiki/Artificial_intelligence">Enlace</a>
+
+    <div id="contenedor">
+        <a class="button" href="index.html">Inicio</a>
+        <h1>Redes Neuronales Artificiales</h1>
+        <p>
+            Las redes neuronales, inspiradas en la estructura del cerebro humano, son un componente esencial en el campo de la inteligencia artificial. Estas redes procesan información a través de capas de nodos interconectados, imitando el funcionamiento de las neuronas biológicas. Su papel es crucial en el ámbito del aprendizaje profundo (deep learning), una rama de la inteligencia artificial que busca imitar la capacidad humana de aprender a través de la experiencia.
+        </p>
+        <p>
+            En el aprendizaje profundo, las redes neuronales profundas desempeñan un papel clave. Estas se aplican en diversas tareas, como el reconocimiento de imágenes y el procesamiento del lenguaje natural. La capacidad de estas redes para aprender representaciones complejas de datos las hace excepcionalmente eficaces en la realización de tareas sofisticadas y complejas.
+        </p>
+        <p>
+            Un ejemplo práctico es el uso de las redes neuronales convolucionales (CNN) en el reconocimiento de imágenes. Estas CNN son fundamentales en tareas como el reconocimiento facial, donde la inteligencia artificial puede aprender a identificar características distintivas de caras a través de capas de nodos interconectados. Esta capacidad permite la clasificación precisa de imágenes, como la identificación de personas en fotografías.
+        </p>
+        <h3>Tipos de Redes Neuronales</h3>
+        <p>
+            Las redes neuronales se pueden clasificar en diferentes tipos, que se utilizan para distintos fines. Aunque no sea una lista completa, la siguiente lista sería representativa de los tipos más comunes de redes neuronales que encontrará en sus casos de uso:
+        </p>
+        <p>
+            El perceptrón es la red neuronal más antigua, creada por Frank Rosenblatt en 1958.
+        </p>
+        <p> 
+            Las redes neuronales de propagación hacia delante o perceptrones multicapa (MLP) son las redes en las que nos hemos centrado principalmente en este artículo. Están formadas por una capa de entrada, una capa o varias capas ocultas y una capa de salida. Aunque estas redes neuronales también se conocen como MLP, es importante tener en cuenta que en realidad están formadas por neuronas sigmoides, no perceptrones, ya que la mayoría de los problemas del mundo real son no lineales. Normalmente, se proporcionan datos a estos modelos para entrenarlos y son la base para la visión artificial, el procesamiento del lenguaje natural y otras redes neuronales.
+
+ 
+        </p>
+        <p>
+            Las redes neuronales convolucionales (CNN) son similares a las redes de propagación hacia delante, pero normalmente se utilizan para el reconocimiento de imágenes, el reconocimiento de patrones y/o la visión artificial. Estas redes aprovechan los principios del álgebra lineal, particularmente la multiplicación de matriz, para identificar patrones dentro de una imagen. 
+        </p>
+        <p>
+            Las redes neuronales recurrentes (RNN) se identifican por sus bucles de retroalimentación. Estos algoritmos de aprendizaje se utilizan principalmente con datos de series temporales para hacer predicciones sobre resultados futuros, por ejemplo, predicciones del mercado de acciones o previsiones de ventas.
+        </p>
+        <h3>Redes neuronales frente a deep learning</h3>
+        <p>El deep learning y las redes neuronales tienden a utilizarse indistintamente en la conversación, lo que puede ser confuso. Vale la pena señalar que "deep" en deep learning solo hace referencia a la profundidad de las capas en una red neuronal. Una red neuronal que consta de más de tres capas (incluidas las entradas y la salida) puede considerarse un algoritmo de deep learning. Una red neuronal que solo tiene dos o tres capas es una red neuronal básica.</p>
+       <h3> 
+        Más información sobre Inteligencia Artificial: <a href="https://en.wikipedia.org/wiki/Artificial_intelligence">Enlace</a>
     </h3>
+    </div>
 
-</div>
-
-<div>
-    <h2>Cuestionario:</h2>
-    <form id="testForm">
-        <p id="pregunta1">Pregunta 1: ¿Qué tipo de red neuronal se utiliza comúnmente para el reconocimiento de imágenes? </p>
-        <label><input type="radio" name="q1" value="paris"> Redes neuronales recurrentes (RNN)</label>
-        <label><input type="radio" name="q1" value="berlin"> Máquinas de vectores de soporte (SVM)</label>
-        <label><input type="radio" name="q1" value="Neuro"> Redes neuronales convolucionales (CNN)</label>
-        <label><input type="radio" name="q1" value="londres"> Redes neuronales de Boltzmann</label>
-
-        <p id="pregunta2">Pregunta 2: ¿Qué caracteriza a las redes neuronales artificiales? </p>
-        <label><input type="radio" name="q2" value="rojo"> No requieren entrenamiento </label>
-        <label><input type="radio" name="q2" value="Insp"> Inspiradas en la estructura del cerebro humano </label>
-        <label><input type="radio" name="q2" value="verde"> Solo útiles para tareas de bajo nivel </label>
-        <label><input type="radio" name="q2" value="verde"> Incapaces de procesar lenguaje natural</label>
-
-        <p id="pregunta3">Pregunta 3: ¿En qué área de la IA las redes neuronales artificiales tienen un papel crucial?</p>
-        <label><input type="radio" name="q3" value="5"> Aprendizaje reforzado </label>
-        <label><input type="radio" name="q3" value="Deep"> Aprendizaje profundo (deep learning) </label>
-        <label><input type="radio" name="q3" value="10"> Aprendizaje no supervisado </label>
-        <label><input type="radio" name="q3" value="10"> Procesamiento de datos en tiempo real</label>
-
-
-        <p id="pregunta4">Pregunta 4: ¿Cuál es un ejemplo del uso de redes neuronales en el procesamiento del lenguaje natural (PLN)?</p>
-        <label><input type="radio" name="q4" value="tokio"> Clustering de documentos </label>
-        <label><input type="radio" name="q4" value="seul"> Segmentación de mercado </label>
-        <label><input type="radio" name="q4" value="Traduc"> Traducción automática</label>
-        <label><input type="radio" name="q4" value="pekin"> Reducción de dimensionalidad</label>
-
-        <br>
-        <button type="button" onclick="calificarTest()">Terminar</button>
-    </form>
-
-    <div id="resultado"></div>
-</div>
-
-<script>
-    function calificarTest() {
-        var respuestasCorrectas = ["Neuro", "Insp", "Deep", "Traduc"];
-        var respuestasUsuario = [];
-        var fallos = 0;
-
-        // Obtener respuestas del usuario
-        for (var i = 1; i <= 4; i++) {
-            var respuesta = document.querySelector('input[name="q' + i + '"]:checked');
-            if (respuesta) {
-                respuestasUsuario.push(respuesta.value);
-            } else {
-                respuestasUsuario.push(null);
-            }
-        }
-
-        // Calcular resultado
-        var aciertos = 0;
-        var preguntasFalladas = [];
-
-        for (var i = 0; i < respuestasCorrectas.length; i++) {
-            if (respuestasCorrectas[i] === respuestasUsuario[i]) {
-                aciertos++;
-            } else {
-                fallos++;
-                preguntasFalladas.push("pregunta" + (i + 1));
-            }
-        }
-
-        // Resaltar preguntas incorrectas visualmente
-        preguntasFalladas.forEach(function(pregunta) {
-            document.getElementById(pregunta).classList.add('pregunta-fallada');
-        });
-
-        // Mostrar resultado
-        var resultadoDiv = document.getElementById('resultado');
-        resultadoDiv.innerHTML = "<h2>Resultado:</h2>";
-        resultadoDiv.innerHTML += "<p>Aciertos: " + aciertos + "</p>";
-        resultadoDiv.innerHTML += "<p>Fallos: " + fallos + "</p>";
-
-        if (fallos > 0) {
-            resultadoDiv.innerHTML += "<p>Preguntas falladas: " + preguntasFalladas.join(", ") + "</p>";
-        }
-    }
-</script>
+    
 
 </body>
+
 </html>
+
+

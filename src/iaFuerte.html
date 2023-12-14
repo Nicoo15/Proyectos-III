@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprendizaje No Supervisado</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -55,12 +54,7 @@
             color: #0056b3;
         }
 
-        #testForm {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+        
 
         form {
             background-color: #fff;
@@ -76,24 +70,10 @@
             margin-bottom: 10px;
         }
 
-        /* Resalta las preguntas con negrita */
-        p[id^="pregunta"] {
-            font-weight: bold;
-        }
 
-        .pregunta-acertada {
-            text-decoration: underline;
-            color: green;
-        }
+        
 
-        .pregunta-fallada {
-            background-color: #ffcccc;
-        }
-
-        #resultado {
-            color: #333;
-            margin-top: 20px;
-        }
+        
 
         button {
             background-color: #007BFF;
@@ -112,107 +92,62 @@
         }
     </style>
 </head>
+
 <body>
-   
-<div id="contenedor">
-    <a class="button" href="index.html">Inicio</a>
-    <h1>IA Fuerte o General</h1>
-    <p>
-      La inteligencia artificial fuerte, también conocida como inteligencia artificial general, representa un horizonte teórico donde la IA tiene la capacidad de comprender, aprender y realizar cualquier tarea cognitiva humana. A diferencia de la inteligencia artificial débil, que se especializa en funciones específicas, la IA fuerte aspira a alcanzar un nivel de habilidad y comprensión equiparable al humano en diversas áreas.
-    </p>
-    <p>
-      Aunque la IA fuerte aún no se ha desarrollado completamente y sigue siendo un objetivo teórico, su potencial es asombroso. Se imagina como una entidad capaz de ejecutar una amplia variedad de tareas cognitivas, desde entender texto y reconocer objetos hasta resolver problemas matemáticos y aprender nuevas habilidades, todo ello sin requerir programación específica.
-    </p>
-    <p>
-      Sin embargo, es importante destacar que la IA fuerte está en una fase temprana de desarrollo y no se utiliza comercialmente a gran escala en la actualidad. Su implementación completa se enfrenta a desafíos significativos en términos de ética, seguridad y complejidad técnica. El logro de una inteligencia artificial general plantea preguntas fundamentales sobre la relación entre la máquina y el ser humano, así como cuestiones éticas en torno a su impacto en la sociedad.
-    </p>
-    <h3>
-      </span><a href="https://en.wikipedia.org/wiki/Artificial_general_intelligence" target="_blank">Enlace</a>
-    </h3>
 
-</div>
+    <div id="contenedor">
+        <a class="button" href="index.html">Inicio</a>
+        <h1>IA Fuerte o General</h1>
+        <p>
+            La inteligencia artificial fuerte, también conocida como inteligencia artificial general, representa un horizonte teórico donde la IA tiene la capacidad de comprender, aprender y realizar cualquier tarea cognitiva humana. A diferencia de la inteligencia artificial débil, que se especializa en funciones específicas, la IA fuerte aspira a alcanzar un nivel de habilidad y comprensión equiparable al humano en diversas áreas.
+        </p>
+        <p>
+            Aunque la IA fuerte aún no se ha desarrollado completamente y sigue siendo un objetivo teórico, su potencial es asombroso. Se imagina como una entidad capaz de ejecutar una amplia variedad de tareas cognitivas, desde entender texto y reconocer objetos hasta resolver problemas matemáticos y aprender nuevas habilidades, todo ello sin requerir programación específica.
+        </p>
+        <p>
+            Sin embargo, es importante destacar que la IA fuerte está en una fase temprana de desarrollo y no se utiliza comercialmente a gran escala en la actualidad. Su implementación completa se enfrenta a desafíos significativos en términos de ética, seguridad y complejidad técnica. El logro de una inteligencia artificial general plantea preguntas fundamentales sobre la relación entre la máquina y el ser humano, así como cuestiones éticas en torno a su impacto en la sociedad.
+        </p>
+        <h3>Términos y definiciones de la IA Fuerte</h3>
+        <p>
+            Los términos inteligencia artificial, machine learning y deep learning a menudo se usan en un contexto equivocado, y se aplican indistintamente para describir la IA fuerte, por lo que vale la pena definir cada uno brevemente:
+        </p>
+        <p>
+            La inteligencia artificial definida por John McCarthy (enlace externo a IBM) es "la ciencia y la ingeniería de hacer máquinas inteligentes, especialmente programas informáticos inteligentes. Está relacionada con la tarea similar de utilizar ordenadores para comprender la inteligencia humana, pero la IA no se limita a métodos que sean observables biológicamente".
+        </p>    
+        <p>
+            Machine learning, o aprendizaje automático, es un subcampo de la inteligencia artificial. Los modelos de machine learning clásicos (no profundos) requieren más intervención humana para segmentar datos en categorías (es decir, a través del aprendizaje de funciones).
+        </p>
+        <p>
+           Deep learning, o aprendizaje profundo, es también un subcampo de machine learning, que intenta imitar la interconexión del cerebro humano utilizando redes neuronales. Sus redes neuronales artificiales están formadas por capas de modelos, que identifican patrones dentro de un conjunto de datos determinado. Aprovechan un elevado volumen de datos de entrenamiento para aprender con precisión, lo que exige hardware más potente, como GPU o TPU. Los algoritmos de deep learning están más estrechamente vinculados con la IA a nivel humano.     
+        </p>
+        <h3>
+            Tendencias de IA Fuerte o General
+        </h3>
+        <p> 
+            Si bien es cierto que no hay ejemplos claros de inteligencia artificial fuerte, el campo de la IA innova rápidamente.  Ha surgido otra teoría de la IA, conocida como superinteligencia artificial (ASI, por sus siglas en inglés), súper inteligencia o Súper IA. Este tipo de IA supera a la IA fuerte en inteligencia humana y capacidad. Sin embargo, la Súper AI sigue siendo puramente especulativa, ya que aún tenemos que lograr ejemplos de IA fuerte.
 
-<div>
-    <h2>Cuestionario:</h2>
-    <form id="testForm">
-        <p id="pregunta1">Pregunta 1: ¿Cuál es el estado actual de la IA fuerte? </p>
-        <label><input type="radio" name="q1" value="paris"> Ampliamente utilizada en aplicaciones comerciales</label>
-        <label><input type="radio" name="q1" value="berlin"> Completamente desarrollada y operativa</label>
-        <label><input type="radio" name="q1" value="Desa"> Todavía en desarrollo y no implementada completamente</label>
-        <label><input type="radio" name="q1" value="londres"> Solo utilizada en sistemas de recomendación</label>
+Dicho esto, hay campos en los que la IA juega un papel más importante, como por ejemplo:
+        </p>
+        <p>
+            - Ciberseguridad: la inteligencia artificial asumirá más funciones en las medidas de ciberseguridad de las organizaciones, incluida la detección de brechas, la supervisión, la inteligencia de amenazas, la respuesta a incidentes y el análisis de riesgos.
+        </p>
+        
+        <p>
+           - Entretenimiento y creación de contenidos: los programas de ciencias de la computación son cada vez mejores en la producción de contenido, ya sea redacción, poesía, videojuegos o incluso películas. La aplicación de IA de generación de texto GBT-3 de OpenAI ya está creando contenido que es casi imposible de distinguir de una copia escrita por humanos.
+        </p>
+        <p>
+            - Reconocimiento y predicción de comportamientos: los algoritmos de predicción fortalecerán la IA, en aplicaciones desde previsiones meteorológicas y bursátiles hasta, más interesante aún, predicciones del comportamiento humano. Esto a su vez plantea interrogantes en torno a los sesgos implícitos y la IA ética. Algunos investigadores de IA de la comunidad de IA están exigiendo que se creen una serie de reglas antidiscriminatorias, una reinvindicación que a menudo se asocia con el hashtag #responsibleAI.
+        </p>
+        <h3>
+            <span> Más información sobre Inteligencia Artificial Fuerte:  </span><a
+            href="https://en.wikipedia.org/wiki/Weak_AI" target="_blank">Enlace</a>
+        </h3>
+    </div>
 
-        <p id="pregunta2">Pregunta 2: ¿Qué distingue a la IA fuerte de la IA débil? </p>
-        <label><input type="radio" name="q2" value="rojo"> Su capacidad para realizar tareas específicas</label>
-        <label><input type="radio" name="q2" value="Compr"> Su habilidad para comprender y aprender cualquier tarea cognitiva humana</label>
-        <label><input type="radio" name="q2" value="verde"> Su uso en sistemas de recomendación</label>
-        <label><input type="radio" name="q2" value="verde"> Su limitación a aplicaciones de procesamiento de lenguaje natural</label>
-
-        <p id="pregunta3">Pregunta 3: ¿Cuál es un reto clave en el desarrollo de la IA fuerte? </p>
-        <label><input type="radio" name="q3" value="5"> Mejorar los sistemas de recomendación </label>
-        <label><input type="radio" name="q3" value="IA"> Crear IA que comprenda y realice cualquier tarea cognitiva </label>
-        <label><input type="radio" name="q3" value="10"> Optimizar algoritmos de aprendizaje supervisado </label>
-        <label><input type="radio" name="q3" value="10"> Incrementar la eficiencia de las redes neuronales convolucionales</label>
-
-
-        <p id="pregunta4">Pregunta 4: ¿Cuál es una característica de la IA fuerte? </p>
-        <label><input type="radio" name="q4" value="tokio"> Especialización en una tarea específica</label>
-        <label><input type="radio" name="q4" value="Gama"> Capacidad para realizar una amplia gama de tareas cognitivas </label>
-        <label><input type="radio" name="q4" value="pekin"> Limitación a tareas de procesamiento de lenguaje natural</label>
-        <label><input type="radio" name="q4" value="pekin"> Enfoque exclusivo en reconocimiento de voz
-        </label>
-
-        <br>
-        <button type="button" onclick="calificarTest()">Terminar</button>
-    </form>
-
-    <div id="resultado"></div>
-</div>
-
-<script>
-    function calificarTest() {
-        var respuestasCorrectas = ["Desa", "Compr", "IA", "Gama"];
-        var respuestasUsuario = [];
-        var fallos = 0;
-
-        // Obtener respuestas del usuario
-        for (var i = 1; i <= 4; i++) {
-            var respuesta = document.querySelector('input[name="q' + i + '"]:checked');
-            if (respuesta) {
-                respuestasUsuario.push(respuesta.value);
-            } else {
-                respuestasUsuario.push(null);
-            }
-        }
-
-        // Calcular resultado
-        var aciertos = 0;
-        var preguntasFalladas = [];
-
-        for (var i = 0; i < respuestasCorrectas.length; i++) {
-            if (respuestasCorrectas[i] === respuestasUsuario[i]) {
-                aciertos++;
-            } else {
-                fallos++;
-                preguntasFalladas.push("pregunta" + (i + 1));
-            }
-        }
-
-        // Resaltar preguntas incorrectas visualmente
-        preguntasFalladas.forEach(function(pregunta) {
-            document.getElementById(pregunta).classList.add('pregunta-fallada');
-        });
-
-        // Mostrar resultado
-        var resultadoDiv = document.getElementById('resultado');
-        resultadoDiv.innerHTML = "<h2>Resultado:</h2>";
-        resultadoDiv.innerHTML += "<p>Aciertos: " + aciertos + "</p>";
-        resultadoDiv.innerHTML += "<p>Fallos: " + fallos + "</p>";
-
-        if (fallos > 0) {
-            resultadoDiv.innerHTML += "<p>Preguntas falladas: " + preguntasFalladas.join(", ") + "</p>";
-        }
-    }
-</script>
+    
 
 </body>
+
 </html>
+
+
