@@ -11,59 +11,90 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
+            background-image: url('img/ia.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        h1 {
+            align-items: center;
             margin: 0;
+            padding: 0;
+            
         }
 
-        h2 {
-            color: #333;
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .consejo {
-            background-color: #fff;
-            margin: 20px auto;
-            max-width: 600px;
+        #contenedor {
+            max-width: 800px;
+            width: 100%;
             padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        h3 {
-            color: #333;
+        h1,
+        h2 {
+            color: var(--primary-bg-color);
+            text-align: center;
         }
 
         p {
-            color: #666;
+            margin: 10px 0;
         }
-		footer {
-            background-color: #333;
+
+        h3 {
+            color: var(--primary-bg-color);
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+
+        
+
+        
+
+        button {
+            background-color: #007BFF;
             color: #fff;
-            padding: 5px 10px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
         }
-		h4 {
-			color:white;
-		}
-		
+
+        button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 
